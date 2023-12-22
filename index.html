@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="t1-bg-primary">
+  <div class="t1-text calculator">
+    <div class="header">
+      <h1 class="title">calc</h1>
+      <div class="toggle">
+        <span>THEME</span>
+        <div class="toggle-indicators">
+          <div class="number-indicator">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div class="t1-bg-secondary theme-toggle">
+            <input id="toggle-1" class="t1-btn-color button" type="radio"></input>
+            <input id="toggle-2" class="t1-btn-color button btn-2" type="radio"></input>
+            <input id="toggle-3" class="t1-btn-color button" type="radio"></input>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input id="output" type="text" readonly placeholder="0" class="t1-bg-screen screen"></input>
+    <div class="t1-bg-secondary keypad">
+      <input type="button" value="7" class="t1-key num-key key" placeholder="7">
+      <input type="button" value="8" class="t1-key num-key key" placeholder="8">
+      <input type="button" value="9" class="t1-key num-key key" placeholder="9">
+      <input type="button" value="DEL" class="t1-key-dark key" placeholder="DEL">
+      <input type="button" value="4" class="t1-key num-key key" placeholder="4">
+      <input type="button" value="5" class="t1-key num-key key" placeholder="5">
+      <input type="button" value="6" class="t1-key num-key key" placeholder="6">
+      <input type="button" value="+" class="t1-key num-key key" placeholder="+">
+      <input type="button" value="1" class="t1-key num-key key" placeholder="1">
+      <input type="button" value="2" class="t1-key num-key key" placeholder="2">
+      <input type="button" value="3" class="t1-key num-key key" placeholder="3">
+      <input type="button" value="-" class="t1-key num-key key" placeholder="-">
+      <input type="button" value="." class="t1-key num-key key" placeholder=".">
+      <input type="button" value="0" class="t1-key num-key key" placeholder="0">
+      <input type="button" value="/" class="t1-key num-key key" placeholder="/">
+      <input type="button" value="x" class="t1-key num-key key" placeholder="x">
+
+      <input type="button" value="RESET" class="t1-key-dark reset-key key" placeholder="RESET">
+      <input type="button" value="=" class="t1-key-equal equal-key key" placeholder="=">
+    </div>
+  </div>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  <script src="calculator.js"></script>
+</body>
+</html>
