@@ -71,7 +71,7 @@ key_btn.forEach(element => {
                     result = firstNumber * secondNumber;
                     break;
                 case "/":
-                    result = firstNumber / secondNumber;
+                    result =  secondNumber == 0 ? 0 : firstNumber / secondNumber;
                     break;
             }
             currentValue = result;
